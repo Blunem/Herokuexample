@@ -4,6 +4,7 @@ const app = express()
 
 
 app.use(express.json())
+app.use(express.static('build'))
 morgan.token('body', function getBody (req) {
     let body = 'No data'
     if (req.method === 'POST' )
