@@ -15,7 +15,8 @@ Content-Type: application/json
 
 {
     "name": "Omar Valenzuela",
-    "number": "668-856-12-98"
+    "number": "668-856-12-98",
+    
 }
 
 ###
@@ -34,4 +35,47 @@ Content-Type: application/json
 {
     "name": "Omar Valenzuela",
     "number": ""
+}
+
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Luis Angel",
+    "number": "668-466-44-33"
+}
+
+###
+GET http://localhost:3001/api/persons/60ac2a2cb670033d7e8387ab
+
+###
+GET http://localhost:3001/api/persons/60ad386fb40f495097ce4a7d
+
+###
+GET http://localhost:3001/api/persons/ahhperro
+
+###
+DELETE http://localhost:3001/api/persons/60ac2a6bb670033d7e8387ac
+
+###
+DELETE http://localhost:3001/api/persons/60ac2a2cb670033d7e8387ab
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Omar Valenzuela",
+    "number": "694-556-43-34"
+}
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "K7",
+    "number": "695-856-13-58"
 }
